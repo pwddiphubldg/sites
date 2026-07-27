@@ -1,0 +1,22 @@
+{
+"header": ["START_MONTH", "START_DATE", "END_MONTH", "END_DATE", "TYPE", "MESSAGE", "TIMEOUT" ],
+"data": [
+
+["00", "00", "", "", "", "CUSTOMISED EVENT", "5"],
+
+["09", "01", "10", "31", "D", "Windows 10 [EOL] (15th Oct'2025)", "3"],
+
+["05", "11", "", "", "", "Mother's day", "3"],
+["05", "15", "", "", "", "World Family's Day", "3"],
+["06", "15", "", "", "", "Father's day", "3"],
+["07", "28", "", "", "", "World Parent's day", "3"],
+["09", "06", "", "07", "", "Grandparent's day", "3"],
+
+
+["03", "15", "", "25", "D", "Vernal Equinox (Equal day's) ", "2"],
+["06", "14", "", "26", "D", "Summer Solstice (Longest day's) ", "2"],
+["09", "19", "", "28", "D", "Autumnal Equinox (Equal day's] ", "2"],
+["12", "15", "", "26", "D", "Winter Solstice (Shortest day's) ", "2"]
+
+  ]
+}
