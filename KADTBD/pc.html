@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Desktop </title>
+	<link rel="stylesheet" href="style/no-scrollbar.css">
+	<link rel="stylesheet" href="style/background-image.css">
+	<link rel="stylesheet" href="style/font.css">
+	<link rel="stylesheet" href="style/desktop-icons.css">
+	<link rel="stylesheet" href="style/pc-common.css">
+	<link rel="stylesheet" href="style/pc-desktop.css">
+	<link rel="stylesheet" href="style/pc-taskbar.css">
+	<link rel="stylesheet" href="style/pc-qr-code.css">
+	<link rel="stylesheet" href="style/analog-clock.css">
+</head>
+<body>
+
+<script src="script/html-include.js"></script>
+
+<div class="start-menu cursor-pointer border-0px" id="">
+	<img src="image/menu.png" />
+	<iframe src="menu.html"> </iframe>
+</div>
+
+
+<!--<div class="full-body"> -->
+
+<div class="desktop">
+	<div id="notification"> </div>
+	
+	<!-- Analog clock gadget -->
+    <div class="analog-clock">	</div>
+	<script> includeHTML("analog-clock.html", ".analog-clock"); </script>
+    
+	<div id="sticky-note">
+	<iframe src="sticky-note.html"> </iframe>
+<!--		<textarea placeholder="Write your note here..."></textarea>
+		<button> Save </button> -->
+	</div>
+    
+<div id="icons-container">	</div>
+<script> includeHTML("desktop-icons.html", "#icons-container"); </script>
+
+<!-- END of Icons container-->
+
+<!--
+<div class="mouse-test-container">
+<div class="dynamic-mouse" class="hover-test">
+	<img src="image/whatsapp-jor.jpeg" />
+	<span> Hover Me ! </span>
+</div>
+<div class="dynamic-mouse" class="click-test">
+	<span> Click Me ! </span>
+	<iframe src="main.html"> </iframe>
+</div>
+</div>
+-->
+
+</div>	<!-- end of desktop -->
+
+<div class="window" id="category">
+<!--	<div class="title-bar"> Office Link's <div class="close-button"> X </div> </div> 
+	<div class="close-button" id="minimise-button"> _ </div> -->
+	<div class="close-button"> X </div> 
+	<iframe src="menu.html"> </iframe>
+</div>
+
+<!--
+<div class="window" id="grid">	
+	<div class="title-bar"> Menu <div class="close-button"> X </div> </div> 
+	<div class="close-button" id="minimise-button"> _ </div> 
+	<div class="close-button"> X </div>
+	<iframe src="main.html"> </iframe>
+</div>
+
+<div class="window" id="search">
+	<div class="close-button"> X </div>
+	<iframe src="search-assam.html"> </iframe>
+</div>
+
+-->
+<!--
+<div class="hover">
+	<iframe src="weather-chart.html"> </iframe>
+</div>
+-->
+
+<footer>
+	
+	<div id="apps" class="text-white-with-black-outline display-none">
+
+		<div class="footer-apps cursor-pointer display-none" id="start">
+			<img src="image/windows-outline.png" />
+		</div>
+
+		<div class="footer-apps qr-code-container" id="footer-show-qr-code-1">
+			<img src="image/scanner.png" />
+			<div class="footer-apps-span"> <span> Scan to Send ! <br> (Whatsapp 1) </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-1" src="image/whatsapp-qr-code-user-1.jpeg">
+			<div class="qr-code-span qr-code-span-footer"> Whatsapp 1 </div>
+		</div>
+
+		<div class="footer-apps qr-code-container display-none" id="footer-show-qr-code-2">
+			<img src="image/scanner.png" />
+			<div class="footer-apps-span"> <span> Scan to Send ! <br> (Whatsapp 2) </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-2" src="image/whatsapp-qr-code-user-2.jpeg">
+		</div>
+
+		<div class="footer-apps qr-code-container " id="footer-show-qr-code-3">
+			<img src="image/qr-code-2.png" />
+			<div class="footer-apps-span"> <span> Scan to Upload ! </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-3" src="image/whatsapp-qr-code-user-2.jpeg">
+		</div>
+		
+<!--
+		<div class="footer-apps" id="show-search">
+			<img src="image/search-engine-small.png" />
+		</div>
+
+		<div class="footer-apps" id="show-menu">
+			<img src="image/website.png" />
+			<iframe src="main.html"> </iframe>	
+		</div>
+	
+		<div class="footer-apps" id="show-grid">
+			<img src="image/apps.png" />
+		</div>	
+		<div class="footer-apps" id="show-search">
+			<img src="image/search-engine-small.png" />
+		</div>
+		<div class="footer-apps" id="show-webcam">
+			<img src="image/webcam.png" />
+		</div>
+-->
+	</div>
+
+<!--	
+	<a href="" target="_blank">
+	<div class="footer" id="footer-finassam">
+	<img src="image/india.png" />
+	<span> Fin Assam </span>
+	</div>
+	</a>
+-->	
+	<!-- System tray start -->
+	<div id="system-tray" class="text-white-with-black-outline"> 
+
+<!--
+		<div class="system-tray-links qr-code-container" id="footer-show-qr-code-1">
+			<img src="image/scanner.png" />
+			<div class="footer-apps-span"> <span> Scan to Send ! <br> (Whatsapp 1) </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-1" src="image/whatsapp-qr-code-user-1.jpeg">
+		</div>
+
+		<div class="footer-apps qr-code-container display-none" id="footer-show-qr-code-2">
+			<img src="image/scanner.png" />
+			<div class="footer-apps-span"> <span> Scan to Send ! <br> (Whatsapp 2) </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-2" src="image/whatsapp-qr-code-user-2.jpeg">
+		</div>
+
+		<div class="footer-apps qr-code-container " id="footer-show-qr-code-3">
+			<img src="image/qr-code-2.png" />
+			<div class="footer-apps-span"> <span> Upload file ! </span></div>
+			<img class="qr-code-img qr-code-img-footer qr-code-img-footer-3" src="image/whatsapp-qr-code-user-2.jpeg">
+		</div>
+		<div class="hover-container">
+			<iframe src="weather-chart.html" class="iframe-hover"> </iframe>
+		</div>
+		<img src="image/cloudy.png">
+		<a href="weather-chart.html"  target="_blank" aria-label="Weather Chart">
+			<span id="temperature"></span>
+		</a>
+	|
+	-
+-->
+		<div class="footer display-none" id="clock" >	<span class="clock"></span>	</div>
+		<div class="footer" id="weekday">	Weekday	</div>
+	&nbsp; &nbsp; | &nbsp; &nbsp;
+		<div class="footer" id="footer-date">	Date	</div>
+	</div>
+</footer>
+
+<!--</div>-->
+
+<script src="script/cursor.js" > </script>
+<!--
+<script src="script/temperature.js"> </script>
+<script src="script/sticky-note.js" > </script>
+<script src="script/pc-window-grid.js" > </script>
+<script src="script/pc-window-search.js" > </script>
+-->
+<script src="script/pc-window-start-menu.js" > </script>
+<script src="script/notification.js" > </script>
+<script src="script/weekday-short.js" > </script>
+<script src="script/time.js" > </script>
+<script src="script/date.js" > </script>
+
+</body>
+</html>
